@@ -47,7 +47,7 @@ alpha = 0.01
 num_iters = 10000
 w_final,b_final,J_hist,P_hist = gradient_descent(X_train,Y_train,w_init,b_init,alpha,num_iters,compute_cost,compute_gradient )
 print(f"The weight is: {w_final:8.4f} and the bias is: {b_final:8.4f}")
-print(f"a 1200 sqft house is {w_final*1.2 + b_final:0.1f}")
+print(f"a 1200 sqft house is {w_final*1.2 + b_final:0.1f} thousand dollars")
 print(f"a 2000 sqft house is {w_final*2.0 + b_final:0.1f} thousand dollars")
 # plot cost versus iteration  
 fig, (ax1, ax2) = plt.subplots(1, 2, constrained_layout=True, figsize=(12,4))
